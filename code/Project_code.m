@@ -40,7 +40,7 @@ function dydt = f(t, y)
     gam = 0.5e-4; 
     kappa = 2.33e-3; 
     a = 2e-3; 
-    omega = 5.556; 
+    omega = 5.566; 
     I = 1/2*m_D*r^2+m_L*r^2; 
     
     
@@ -50,7 +50,7 @@ function dydt = f(t, y)
 end
  
 function [value,isterminal,direction] = events(t, y)
-    omega = 5.556;
+    omega = 5.566;
     value = cos(omega*t); 
     isterminal = 0; 
     direction = 1;  
